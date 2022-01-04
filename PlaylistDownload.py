@@ -1,7 +1,10 @@
 from pytube import Playlist
 
-p = Playlist('https://www.youtube.com/playlist?list=PL_yseowcuqYJc7wXtGIsshYp1B_W0M-ZK')
+url = input("Enter playlist URL:")
 
+p = Playlist(url)
+
+# Your path folder
 des = 'F:\\c'
 
 for video in p.videos:
