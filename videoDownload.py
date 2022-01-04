@@ -9,7 +9,7 @@ while(x):
     for video in v.streams.filter(mime_type="video/mp4"):
         print(video)
 
-    Reso = input("Enter the Res: ")
+    Reso = input("Enter the Resolution: ")
 
     if v.streams.filter(res=Reso).first().download('E:\\'):
         print("Done")
@@ -19,4 +19,3 @@ while(x):
     y = input("Want to download another Video?(y/n)")
     if y == "n":
         x = False
-
